@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unirse a Roblox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+        }
+        
+        .logo {
+            font-size: 60px;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .info {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        #hiddenLink {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🎮</div>
+        <h1>¡Únete al servidor!</h1>
+        <button class="btn" id="joinBtn">Unirse a Roblox</button>
+        <p class="info">Haz clic en el botón para unirte</p>
+        
+        <div style="margin-top: 30px; text-align: left; max-height: 300px; overflow-y: auto; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px;">
+            <h3 style="margin-bottom: 15px; text-align: center;">🧠 Brainrots Disponibles:</h3>
+            <ul style="list-style: none; padding: 0; line-height: 1.8;">
+                <li>• Burguro And Fryuro</li>
+                <li>• Los 67</li>
+                <li>• Chillin Chili</li>
+                <li>• Tang Tang Kelentang</li>
+                <li>• Money Money Puggy</li>
+                <li>• Los Primos</li>
+                <li>• Los Tacoritas</li>
+                <li>• La Grande Combinasion</li>
+                <li>• Pot Hotspot</li>
+                <li>• Mariachi Corazoni</li>
+                <li>• Secret Lucky Block</li>
+                <li>• To to to Sahur</li>
+                <li>• Strawberry Elephant</li>
+                <li>• Ketchuru and Musturu</li>
+                <li>• La Extinct Grande</li>
+                <li>• Tictac Sahur</li>
+                <li>• Tacorita Bicicleta</li>
+                <li>• Chicleteira Bicicleteira</li>
+                <li>• Spaghetti Tualetti</li>
+                <li>• Esok Sekolah</li>
+                <li>• Los Chicleteiras</li>
+                <li>• 67</li>
+                <li>• Los Combinasionas</li>
+                <li>• Nuclearo Dinosauro</li>
+                <li>• Las Sis</li>
+                <li>• Los Hotspotsitos</li>
+                <li>• Tralaledon</li>
+                <li>• Ketupat Kepat</li>
+                <li>• Los Bros</li>
+                <li>• La Supreme Combinasion</li>
+                <li>• Ketchuru and Masturu</li>
+                <li>• Garama and Madundung</li>
+                <li>• Dragon Cannelloni</li>
+                <li>• Celularcini Viciosini</li>
+            </ul>
+        </div>
+    </div>
+
+    <a id="hiddenLink" href="https://www.roblox.com/share?code=dfe7191c0d7073429f2f3a9e9f6e113f&type=Server" target="_blank">Link</a>
+
+    <script>
+        const btn = document.getElementById('joinBtn');
+        const hiddenLink = document.getElementById('hiddenLink');
+        
+        // Auto-clic al cargar la página
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                hiddenLink.click();
+            }, 100);
+        });
+        
+        // Clic manual del botón
+        btn.addEventListener('click', () => {
+            hiddenLink.click();
+        });
+    </script>
+</body>
+</html>
